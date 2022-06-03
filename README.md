@@ -17,10 +17,10 @@ terminal emulator a dynamic message of the day.
    the termux-login.sh file:
 
    ```sh
-   (cd /data/data/com.termux/files/usr/etc/ && python3 -m motd_python)
+   (cd /data/data/com.termux/files/usr/etc/termux_motd && python3 -m src.motd)
    ```
 
-3. Rename the etc/motd file to something else
+3. Rename etc/motd to something else (e.g. motd.bak)
    so Termux does not display it
 
 ## Customization
@@ -33,7 +33,7 @@ of the `__main__.py` script.
 
 ## Using outside of Termux
 
-This script can run in a desktop environment
+This script *can* run in a desktop environment
 without modifications, but Termux-related features
 will not be available. To prevent the associated
 warnings from showing, set the `TERMUX_API` variable
