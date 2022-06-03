@@ -5,10 +5,20 @@
 A custom python script for giving the [Termux][1]
 terminal emulator a dynamic message of the day.
 
+(this repo has also been managed solely on mobile
+with Termux :slightly_smiling_face:)
+
 ## Requirements
 
+- The Termux android app
 - Python 3.10 or above (`pkg install python`)
 - [Termux API 0.50.1][2] or above
+
+This script *can* run in a desktop environment
+without modifications, but Termux-related features
+will not be available. To prevent the associated
+warnings from showing, set the `TERMUX_API` variable
+in the script to `False`.
 
 ## Installation
 
@@ -32,14 +42,6 @@ which can be edited to show quotes you want to see.
 
 Sections of the MOTD can be edited near the top
 of the `__main__.py` script.
-
-## Using outside of Termux
-
-This script *can* run in a desktop environment
-without modifications, but Termux-related features
-will not be available. To prevent the associated
-warnings from showing, set the `TERMUX_API` variable
-in the script to `False`.
 
 ## License
 
