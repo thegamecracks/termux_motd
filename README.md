@@ -1,5 +1,7 @@
 # Termux-MOTD
 
+![Image showing login demo](images/demo.jpg)
+
 A custom python script for giving the [Termux][1]
 terminal emulator a dynamic message of the day.
 
