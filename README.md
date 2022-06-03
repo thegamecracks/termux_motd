@@ -45,4 +45,5 @@ in the script to `False`.
 
 This project is using the [MIT License](LICENSE).
 
-[1]: https://f-droid.org/en/packages/com.termux.api/
+[1]: https://termux.com/
+[2]: https://f-droid.org/en/packages/com.termux.api/
