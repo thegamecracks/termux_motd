@@ -13,6 +13,12 @@ import textwrap
 # False: disable usage of API
 TERMUX_API = None
 
+try:
+  COL, ROW = os.get_terminal_size()
+except OSError:
+  # May have run from remote command like `git fetch`
+  exit()
+
 # Change from home directory to this directory
 os.chdir(os.path.dirname(__file__))
 
@@ -56,7 +62,6 @@ SECTIONS = [
 
 # Constants for use in placeholders
 DT = datetime.datetime.now().astimezone()
-COL, ROW = os.get_terminal_size()
 
 
 # Helper functions
